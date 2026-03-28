@@ -1,9 +1,8 @@
-
-
+link:https://uq.sharepoint.com/:u:/r/teams/Section_7620_22283/Shared%20Documents/39_Idris/yuejia%20bai%20literation%201/yuejia%20bai%20interview1.m4a?csf=1&web=1&e=BPGURe
 
 transcript
 
-Interviewer：Hi there, thanks for coming in today. We are just doing a quick interview about YouTube club and your experience. It should be around 10 minutes. Is that okay?
+Interviewer：Hi there, thanks for coming in today. We are just doing a quick interview about uq club and your experience. It should be around 10 minutes. Is that okay?
 
 Interviewee: Yeah, totally. I've got so much to say about this, honestly.
 
