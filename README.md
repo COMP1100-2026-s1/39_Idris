@@ -76,6 +76,7 @@ Detailed transcripts can be found in the Interviews folder.
 ---
 
 ## Repository Structure
+```
 ├── Documents/
 │ ├── business_model_canvas.md
 │ ├── learning_cards.md
@@ -85,7 +86,7 @@ Detailed transcripts can be found in the Interviews folder.
 │ └── Iteration_1/
 │ └── (interview transcripts)
 |
-
+```
 Each folder contains the relevant materials developed during this stage of the project.
 
 
