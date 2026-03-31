@@ -95,7 +95,6 @@ Common barriers include unclear information, not knowing what to expect, time co
 - Help students make decisions more quickly
 
 
-
 ## Link to Value Proposition
 
 The accepted hypotheses (discovery difficulty, social influence, and barriers) directly informed our value propositions, such as providing a centralised platform, clearer information, and social features.
