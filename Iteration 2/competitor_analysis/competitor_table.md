@@ -1,0 +1,13 @@
+# Competitor Analysis Table
+# Competitor Analysis Table
+
+| Competitor Company               | Target Market      | Key Value Propositions                                  | Weaknesses                                                              | Notes                                                                 |
+| :------------------------------- | :----------------- | :------------------------------------------------------ | :---------------------------------------------------------------------- | :-------------------------------------------------------------------- |
+| **UQ Club Discovery Hub (Our Product)** | UQ Undergraduate & Postgraduate Students | Centralised platform with verified club profiles, smart filters (interest, time, location), timetable integration, and low-friction joining | Not yet launched; requirevvs onboarding clubs and students to build adoption | Built to solve the core pain point of "decision anxiety" — combining clarity, personalisation, and trust to help students confidently choose clubs. |
+| UQ Union Clubs Portal            | UQ Students        | Official, centralised directory of all registered clubs  | Vague/outdated information; no real activity examples, schedules, or club culture details; clunky UI; no personalised filters or timetable support | The default student starting point, but fails to support the decision-making process students need. |
+| UQ Market Day                    | UQ Students        | In-person interaction; direct access to club members and live experience | Overwhelming and disorganised; one-time only event; no post-event discovery; easy to miss clubs due to crowding | Students rely heavily on it but find it stressful and inefficient, especially for time-poor students. |
+| Club Social Media (Facebook/Instagram) | UQ Students      | Visual proof of activities; casual updates and informal club culture content | Decentralised; inconsistent information quality; hard to compare clubs side-by-side; no structured data | Many clubs use these, but they don’t provide the clear, verified details students need to decide. |
+| Word of Mouth (Friends/Peers)    | UQ Students        | Trusted recommendations; low intimidation factor         | Limited to the clubs friends know; narrow perspective; not scalable for discovering new clubs | Strong initial influence but doesn’t solve the problem of independent discovery or decision-making. |
+| Student Forums/Reddit            | UQ Students        | Unfiltered peer reviews and honest feedback              | Fragmented posts; often outdated; no centralised club profiles; no up-to-date activity information | Useful for opinions, but lacks organised, verified information students can rely on. |
+
+
