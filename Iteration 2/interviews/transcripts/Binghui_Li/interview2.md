@@ -1,5 +1,5 @@
 Transcript
-
+MS Team link:https://uq.sharepoint.com/:u:/t/Section_7620_22283/IQB-W08O8yNVTIQ9O9ylLpjOAf7ctNYy-M6IZQcEghHOGbA
 Interviewer
 Hi, excuse me. We have research about the UQ clubs. We need to do an interview for about 10 minutes. Do you have some free time?
 

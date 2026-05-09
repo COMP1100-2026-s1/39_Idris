@@ -1,0 +1,177 @@
+const clubs = [
+  {
+    id: 1,
+    name: "UQ Football Club",
+    category: "Sports",
+    memberCount: 250,
+    logo: null,
+    introduction:
+      "The UQ Football Club is one of the largest sports clubs at the University of Queensland. The club welcomes players of all skill levels and regularly hosts training sessions, competitions, and social events throughout the semester. Whether you're a seasoned player or picking up a ball for the first time, you'll find a place here.",
+    activities: [
+      "Tuesday & Thursday evening training sessions (6 pm – 8 pm)",
+      "Inter-university league matches every second Saturday",
+      "Annual end-of-semester club dinner and awards night",
+      "Social futsal nights open to all members",
+    ],
+    meetingLocation: "UQ Sports Fields, Sir William MacGregor Drive, St Lucia",
+    contactEmail: "football@uqclubs.uq.edu.au",
+    socialMedia: {
+      instagram: "@uq_football",
+      facebook: "UQ Football Club",
+      discord: "discord.gg/uqfc",
+    },
+  },
+  {
+    id: 2,
+    name: "UQ Malaysian Students Association",
+    category: "Culture",
+    memberCount: 315,
+    logo: null,
+    introduction:
+      "The UQ Malaysian Students Association (UQMSA) aims to connect Malaysian students and promote Malaysian culture through food festivals, networking events, cultural nights, and student support activities. We foster a warm community that welcomes both Malaysian students and anyone with a passion for Malaysian culture and cuisine.",
+    activities: [
+      "Bi-weekly cultural meetups and potluck dinners",
+      "Annual Malaysian Night cultural showcase",
+      "Orientation welcome events for new Malaysian students",
+      "Study groups and academic support sessions",
+    ],
+    meetingLocation: "UQ Union Complex, Building 21A, St Lucia",
+    contactEmail: "uqmsa@uqclubs.uq.edu.au",
+    socialMedia: {
+      instagram: "@uqmsa_official",
+      facebook: "UQ Malaysian Students Association",
+      discord: "discord.gg/uqmsa",
+    },
+  },
+  {
+    id: 3,
+    name: "UQ Computing Society",
+    category: "Faculty",
+    memberCount: 420,
+    logo: null,
+    introduction:
+      "The UQ Computing Society (UQCS) is a community for students passionate about programming, software engineering, cybersecurity, AI, and all things technology. We host hackathons, technical workshops, industry networking nights, and coding competitions to help members grow their skills and launch their careers.",
+    activities: [
+      "Weekly coding nights every Wednesday (7 pm – 9 pm)",
+      "Semester hackathon open to all UQ students",
+      "Industry speaker series and career panel events",
+      "Competitive programming and CTF challenge teams",
+    ],
+    meetingLocation: "Hawken Engineering Building (50), Level 3, St Lucia",
+    contactEmail: "hello@uqcs.org",
+    socialMedia: {
+      instagram: "@uqcomputingsociety",
+      facebook: "UQ Computing Society",
+      discord: "discord.gg/uqcs",
+    },
+  },
+  {
+    id: 4,
+    name: "UQ Board Games Club",
+    category: "Others",
+    memberCount: 180,
+    logo: null,
+    introduction:
+      "The UQ Board Games Club is a casual social club where students can relax, make friends, and play a variety of modern and classic board games every week. From quick card games to epic strategy titles, we have something for everyone — no experience required, just bring yourself and a love of fun.",
+    activities: [
+      "Open game nights every Friday afternoon (3 pm – 7 pm)",
+      "Monthly themed game-day tournaments with prizes",
+      "New-member intro sessions with beginner-friendly games",
+      "Game library with 200+ titles available to borrow",
+    ],
+    meetingLocation: "UQ Union Rec Room, Building 21, St Lucia",
+    contactEmail: "boardgames@uqclubs.uq.edu.au",
+    socialMedia: {
+      instagram: "@uq_boardgames",
+      facebook: "UQ Board Games Club",
+    },
+  },
+  {
+    id: 5,
+    name: "UQ Basketball Club",
+    category: "Sports",
+    memberCount: 195,
+    logo: null,
+    introduction:
+      "The UQ Basketball Club offers both competitive and social basketball for UQ students at all skill levels. With dedicated training sessions, regular fixtures in the Brisbane university leagues, and a friendly community atmosphere, the club is the perfect place to improve your game and meet fellow basketball fans.",
+    activities: [
+      "Monday & Wednesday training sessions (7 pm – 9 pm)",
+      "Brisbane Universities Basketball League (BUBL) competition",
+      "3-on-3 street basketball tournaments each semester",
+      "Casual pick-up games every Sunday morning",
+    ],
+    meetingLocation: "UQ Sports Centre, Blair Drive, St Lucia",
+    contactEmail: "basketball@uqclubs.uq.edu.au",
+    socialMedia: {
+      instagram: "@uq_basketball",
+      facebook: "UQ Basketball Club",
+      discord: "discord.gg/uqbball",
+    },
+  },
+  {
+    id: 6,
+    name: "UQ Engineering Society",
+    category: "Faculty",
+    memberCount: 380,
+    logo: null,
+    introduction:
+      "The UQ Engineering Society (UQEngSoc) connects engineering students across all disciplines, from civil and mechanical to chemical and electrical. We run professional development events, industry networking sessions, design challenges, and social activities to make your engineering degree more than just lectures.",
+    activities: [
+      "Fortnightly industry Q&A sessions with working engineers",
+      "Annual Engineering Design Competition",
+      "Resume and interview workshop series each semester",
+      "Social BBQs and trivia nights for all members",
+    ],
+    meetingLocation: "Mansergh Shaw Building (45), Room 204, St Lucia",
+    contactEmail: "committee@uqengsoc.com",
+    socialMedia: {
+      instagram: "@uqengsoc",
+      facebook: "UQ Engineering Society",
+      discord: "discord.gg/uqengsoc",
+    },
+  },
+  {
+    id: 7,
+    name: "UQ Korean Students Association",
+    category: "Culture",
+    memberCount: 210,
+    logo: null,
+    introduction:
+      "The UQ Korean Students Association (UQKSA) celebrates Korean culture and builds community among Korean students and K-culture enthusiasts at UQ. From K-pop dance workshops to traditional food nights and language exchange events, UQKSA is a vibrant community open to everyone.",
+    activities: [
+      "Monthly Korean culture night with food and performances",
+      "K-pop dance and language exchange workshops",
+      "Buddy program pairing new and returning students",
+      "Annual Korean Film Festival screening event",
+    ],
+    meetingLocation: "UQ Union Building 21, Room G18, St Lucia",
+    contactEmail: "uqksa.official@gmail.com",
+    socialMedia: {
+      instagram: "@uqksa_official",
+      facebook: "UQ Korean Students Association",
+    },
+  },
+  {
+    id: 8,
+    name: "UQ Photography Club",
+    category: "Others",
+    memberCount: 145,
+    logo: null,
+    introduction:
+      "The UQ Photography Club is a creative community for photography enthusiasts of all levels — from smartphone snappers to DSLR and mirrorless camera users. We run photo walks, editing workshops, critiques, and exhibitions to help every member develop their eye and technical craft in a supportive environment.",
+    activities: [
+      "Weekly photo walk around campus and inner Brisbane",
+      "Monthly post-processing and editing workshop",
+      "Peer critique and portfolio review sessions",
+      "End-of-semester student photography exhibition",
+    ],
+    meetingLocation: "Michie Building (9), Room 220, St Lucia",
+    contactEmail: "photo@uqclubs.uq.edu.au",
+    socialMedia: {
+      instagram: "@uqphotographyclub",
+      facebook: "UQ Photography Club",
+    },
+  },
+];
+
+export default clubs;
