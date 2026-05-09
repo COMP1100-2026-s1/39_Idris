@@ -1,6 +1,7 @@
 const clubs = [
   {
     id: 1,
+    shortDescription: "Competitive and social football with regular training, league matches, and friendly club events.",
     name: "UQ Football Club",
     category: "Sports",
     memberCount: 250,
@@ -23,6 +24,7 @@ const clubs = [
   },
   {
     id: 2,
+    shortDescription: "Celebrate Malaysian culture through food nights, student support programs, and social events.",
     name: "UQ Malaysian Students Association",
     category: "Culture",
     memberCount: 315,
@@ -45,6 +47,7 @@ const clubs = [
   },
   {
     id: 3,
+    shortDescription: "A tech-focused community hosting coding nights, hackathons, and industry networking opportunities.",
     name: "UQ Computing Society",
     category: "Faculty",
     memberCount: 420,
@@ -67,6 +70,7 @@ const clubs = [
   },
   {
     id: 4,
+    shortDescription: "Relax and connect through weekly board game sessions, tournaments, and a huge game library.",
     name: "UQ Board Games Club",
     category: "Others",
     memberCount: 180,
@@ -88,6 +92,7 @@ const clubs = [
   },
   {
     id: 5,
+    shortDescription: "Play social or competitive basketball with training, fixtures, and weekend pickup games.",
     name: "UQ Basketball Club",
     category: "Sports",
     memberCount: 195,
@@ -110,6 +115,7 @@ const clubs = [
   },
   {
     id: 6,
+    shortDescription: "Engineering students unite for career workshops, design challenges, and networking events.",
     name: "UQ Engineering Society",
     category: "Faculty",
     memberCount: 380,
@@ -132,6 +138,7 @@ const clubs = [
   },
   {
     id: 7,
+    shortDescription: "Experience Korean culture with performances, language exchange, and student buddy programs.",
     name: "UQ Korean Students Association",
     category: "Culture",
     memberCount: 210,
@@ -153,6 +160,7 @@ const clubs = [
   },
   {
     id: 8,
+    shortDescription: "Grow your photography skills with photo walks, editing workshops, and exhibitions.",
     name: "UQ Photography Club",
     category: "Others",
     memberCount: 145,

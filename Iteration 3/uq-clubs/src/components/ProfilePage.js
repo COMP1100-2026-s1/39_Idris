@@ -7,7 +7,8 @@ export default function ProfilePage({ joinedClubs, onViewMore }) {
 
   return (
     <div className="inner">
-      <h1 className="page-title">Profile.</h1>
+      <h1 className="page-title">My Profile</h1>
+      <p className="page-lead">Track your memberships and stay connected with your communities.</p>
 
       <div className="profile-layout">
         {/* Left / top column */}

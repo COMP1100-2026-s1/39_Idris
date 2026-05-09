@@ -18,13 +18,14 @@ export default function HomePage({ joinedClubs, onViewMore, onNavigate }) {
 
   return (
     <div className="inner">
-      <h1 className="welcome-heading">Welcome Back.</h1>
+      <h1 className="welcome-heading">Welcome back</h1>
+      <p className="page-lead">Discover communities that match your interests and make campus life more meaningful.</p>
 
       <div className="search-bar-wrap">
         <input
           className="search-bar"
           type="text"
-          placeholder="Search for clubs"
+          placeholder="Search clubs, activities, or communities"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
