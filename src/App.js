@@ -1,25 +1,68 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import BottomNav from './components/BottomNav';
+import HomePage from './components/HomePage';
+import ClubsPage from './components/ClubsPage';
+import ProfilePage from './components/ProfilePage';
+import ClubModal from './components/ClubModal';
 
-function App() {
+export default function App() {
+  const [currentPage, setCurrentPage] = useState('home');
+  const [joinedClubs, setJoinedClubs] = useState([]);
+  const [modalClub, setModalClub] = useState(null);
+  const [clubsFilter, setClubsFilter] = useState('All');
+
+  const handleNavigate = (page, filter) => {
+    setCurrentPage(page);
+    if (filter) setClubsFilter(filter);
+  };
+
+  const handleViewMore = (club) => setModalClub(club);
+
+  const handleJoin = (clubId) => {
+    setJoinedClubs((prev) =>
+      prev.includes(clubId) ? prev.filter((id) => id !== clubId) : [...prev, clubId]
+    );
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-shell">
+      <Header currentPage={currentPage} onNavigate={handleNavigate} />
+
+      <main className="page-wrapper">
+        {currentPage === 'home' && (
+          <HomePage
+            joinedClubs={joinedClubs}
+            onViewMore={handleViewMore}
+            onNavigate={handleNavigate}
+          />
+        )}
+        {currentPage === 'clubs' && (
+          <ClubsPage
+            joinedClubs={joinedClubs}
+            onViewMore={handleViewMore}
+            initialFilter={clubsFilter}
+          />
+        )}
+        {currentPage === 'profile' && (
+          <ProfilePage
+            joinedClubs={joinedClubs}
+            onViewMore={handleViewMore}
+          />
+        )}
+      </main>
+
+      <BottomNav currentPage={currentPage} onNavigate={handleNavigate} />
+
+      {modalClub && (
+        <ClubModal
+          club={modalClub}
+          joinedClubs={joinedClubs}
+          onJoin={handleJoin}
+          onClose={() => setModalClub(null)}
+        />
+      )}
     </div>
   );
 }
-
-export default App;
