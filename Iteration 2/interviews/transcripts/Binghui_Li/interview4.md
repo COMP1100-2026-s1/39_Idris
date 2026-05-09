@@ -1,0 +1,115 @@
+Transcript
+MS Team link:https://uq.sharepoint.com/:u:/t/Section_7620_22283/IQD6w1C9lHSsTqL1PoNISAb8AXI0K-nGzYOc60fM_JYGpfg
+Interviewer
+Hi, excuse me. We have research about the UQ club. Do you have some free time for about 10 minutes?
+
+Interviewee
+All right, let’s start.
+
+Interviewer
+OK, sure, let’s begin now.
+
+Interviewer
+First, imagine a website where you can filter clubs by interest, time commitment, and difficulty level to find a match instantly. If you could use these features right now, how would you use them to find a club? Please walk us through your process.
+
+Interviewee
+Let me see. I would start by selecting interests, especially looking for photography or computer science. Next, I would immediately adjust the time commitment. As a computer science student, I need to avoid clubs that demand more than 10 hours a week. Finally, I would look at the difficulty. I prefer medium and advanced levels because I enjoy deep technical discussions.
+
+Interviewer
+OK, sure. So which of these three features do you think is the most important for you? Please explain your priority.
+
+Interviewee
+I think it’s time commitment. My academic workload at UQ is heavy. If club activities constantly clash with assessment deadlines, I can’t participate. Knowing upfront whether a club is casual or intensive is crucial before I even click on their profile.
+
+Interviewer
+OK, sure. And what features or details on the website would make this filtering process feel effortless for you?
+
+Interviewee
+I would like it if the site could suggest clubs based on my previous interests and automatically hide clubs whose meeting times conflict with my university timetable.
+
+Interviewer
+OK, so you mean timetable, right?
+
+Interviewee
+Yes.
+
+Interviewer
+Then imagine every club profile page clearly displays detailed activities, meeting times, requirements, and what life is like as a member. In your opinion, what is the most important piece of information you need to see before joining?
+
+Interviewee
+Recent activity logs or portfolios. I want to see exactly what the club did last month. If it’s a photography club, did they go on a field trip or just sit in a lecture hall? Seeing photos or project updates gives me a much better sense than a generic description.
+
+Interviewer
+OK, sure.
+
+Interviewer
+Do you think the current structure of club information, such as activities, time, and rules, is clear? If not, what is missing or confusing?
+
+Interviewee
+I think the current structure is often too vague. Many clubs list weekly meetings without specifying the exact location at St Lucia or what you need to bring. It’s frustrating to find out later that the club is only for certain year levels or majors.
+
+Interviewer
+OK, sure, I understand what you mean.
+
+Interviewer
+Imagine the website offers a simple step-by-step online process to join a club, and you can complete the application in just a few minutes. If joining a club only required a few simple steps online, how would that change your motivation to join?
+
+Interviewee
+A simplified process would significantly increase my motivation. If I’m curious about a hobby but the joining process involves physical paperwork or waiting weeks for a reply, I will likely lose interest. Instead, easy joining encourages spontaneous exploration.
+
+Interviewer
+OK, sure.
+
+Interviewer
+In this ideal easy process, what do you think is the minimum number of steps or information required to join?
+
+Interviewee
+I think three steps are the sweet spot. First, identity verification, like logging into a student account. Second, a digital waiver, just a quick checkbox. Third, clicking the join button and adding the next event to my calendar.
+
+Interviewer
+Oh, OK, sure.
+
+Interviewer
+Are there any current joining procedures like paperwork or waiting time that you would want to eliminate entirely?
+
+Interviewee
+I would eliminate manual approval, waiting times, and repetitive data entry. Since I’m already a student, the system should already know my name and major. I shouldn’t have to type that into every single club application.
+
+Interviewer
+So you mean basic information?
+
+Interviewee
+Yes, like my major and my name.
+
+Interviewer
+OK, sure.
+
+Interviewer
+Imagine the website shows you when your friends have joined or are interested in a specific club. If you saw that your friends were joining a club, how much would that influence your decision to check it out?
+
+Interviewee
+The influence would be moderately high. Seeing friends in a club acts as a quality signal for the social atmosphere. It lowers the barrier to entry because I know I will have someone to talk to during the first meeting, which reduces social anxiety.
+
+Interviewer
+OK, so would you choose to join a club specifically because your friends are there? Why or why not?
+
+Interviewee
+Not necessarily. Interest is still the priority. Even if all my friends are in sports clubs, I won’t join if I’m not interested in sports, like basketball. For me, clubs are about finding my own community and connecting with people who share my specific passions, like films and photography, rather than just following friends.
+
+Interviewer
+Yeah.
+
+Interviewer
+So you mean interest is the most important. If you are interested and your friends are there, you will join. But if you are not interested, even if your friends are there, you don’t want to join, right?
+
+Interviewee
+Yes.
+
+Interviewer
+OK, sure, I understand what you mean.
+
+Interviewer
+The interview is finished now. Thank you. Have a good day.
+
+Interviewee
+Have a good one. Bye.
