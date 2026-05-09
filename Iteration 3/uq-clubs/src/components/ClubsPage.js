@@ -20,14 +20,15 @@ export default function ClubsPage({ joinedClubs, onViewMore, initialFilter }) {
 
   return (
     <div className="inner">
-      <h1 className="page-title">Clubs.</h1>
+      <h1 className="page-title">Browse Clubs</h1>
+      <p className="page-lead">Explore student clubs by category and find the right fit for your goals.</p>
 
       <div className="clubs-toolbar">
         <div className="search-bar-wrap search-bar-wrap--inline">
           <input
             className="search-bar"
             type="text"
-            placeholder="Search for clubs"
+            placeholder="Search clubs by name"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />

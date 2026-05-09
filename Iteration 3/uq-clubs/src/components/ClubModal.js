@@ -54,23 +54,28 @@ const SOCIAL_CONFIG = {
 
 /* ── Main component ───────────────────────────────────── */
 export default function ClubModal({ club, joinedClubs, onJoin, onClose }) {
-  if (!club) return null;
-  const isJoined = joinedClubs.includes(club.id);
-  const accent = CATEGORY_ACCENT[club.category] || '#51247A';
-
   /* Close on Escape */
   useEffect(() => {
+    if (!club) return undefined;
+
     const onKey = (e) => { if (e.key === 'Escape') onClose(); };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
-  }, [onClose]);
+  }, [club, onClose]);
 
   /* Lock body scroll */
   useEffect(() => {
+    if (!club) return undefined;
+
     const prev = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     return () => { document.body.style.overflow = prev; };
-  }, []);
+  }, [club]);
+
+  if (!club) return null;
+
+  const isJoined = joinedClubs.includes(club.id);
+  const accent = CATEGORY_ACCENT[club.category] || '#51247A';
 
   return (
     <div className="modal-overlay" onClick={onClose} role="dialog" aria-modal="true">

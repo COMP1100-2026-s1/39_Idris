@@ -7,12 +7,6 @@ const CATEGORY_COLORS = {
   Others: '#1565C0',
 };
 
-const CATEGORY_INITIALS = {
-  Sports: 'SP',
-  Faculty: 'FA',
-  Culture: 'CU',
-  Others: 'OT',
-};
 
 export default function ClubLogo({ club, size = 48 }) {
   const bg = CATEGORY_COLORS[club.category] || '#888';
