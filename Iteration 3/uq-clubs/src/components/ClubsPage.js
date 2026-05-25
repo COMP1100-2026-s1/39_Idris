@@ -7,15 +7,37 @@ const FILTERS = ['All', 'Sports', 'Faculty', 'Culture', 'Others'];
 export default function ClubsPage({ joinedClubs, onViewMore, initialFilter }) {
   const [search, setSearch] = useState('');
   const [activeFilter, setActiveFilter] = useState(initialFilter || 'All');
+  const [sortOption, setSortOption] = useState('default');
 
   useEffect(() => {
     if (initialFilter) setActiveFilter(initialFilter);
   }, [initialFilter]);
 
-  const filtered = clubs.filter((c) => {
-    const matchSearch = c.name.toLowerCase().includes(search.toLowerCase());
-    const matchFilter = activeFilter === 'All' || c.category === activeFilter;
+const filtered = clubs
+  .filter((c) => {
+    const matchSearch = c.name
+      .toLowerCase()
+      .includes(search.toLowerCase());
+
+    const matchFilter =
+      activeFilter === 'All' || c.category === activeFilter;
+
     return matchSearch && matchFilter;
+  })
+  .sort((a, b) => {
+    if (sortOption === 'az') {
+      return a.name.localeCompare(b.name);
+    }
+
+    if (sortOption === 'most') {
+      return b.memberCount - a.memberCount;
+    }
+
+    if (sortOption === 'least') {
+      return a.memberCount - b.memberCount;
+    }
+
+    return 0;
   });
 
   return (
@@ -38,18 +60,49 @@ export default function ClubsPage({ joinedClubs, onViewMore, initialFilter }) {
           </span>
         </div>
 
-        <div className="filter-row">
-          {FILTERS.map((f) => (
-            <button
-              key={f}
-              className={`filter-btn${activeFilter === f ? ' active' : ''}`}
-              onClick={() => setActiveFilter(f)}
-            >
-              {f}
-            </button>
-          ))}
-        </div>
-      </div>
+            <div className="sort-wrap">
+  <select
+    className="sort-dropdown"
+    value={sortOption}
+    onChange={(e) => setSortOption(e.target.value)}
+  >
+    <option value="default">Sort By</option>
+    <option value="az">A–Z</option>
+    <option value="most">Most Members</option>
+    <option value="least">Least Members</option>
+  </select>
+</div>
+
+<div className="filter-row">
+  {FILTERS.map((f) => (
+    <button
+      key={f}
+      className={`filter-btn${activeFilter === f ? ' active' : ''}`}
+      onClick={() => setActiveFilter(f)}
+    >
+      {f}
+    </button>
+  ))}
+
+  {(search || activeFilter !== 'All' || sortOption !== 'default') && (
+    <button
+      className="filter-btn clear-btn"
+      onClick={() => {
+        setSearch('');
+        setActiveFilter('All');
+        setSortOption('default');
+      }}
+    >
+      Clear Filters
+    </button>
+  )}
+</div>
+
+</div>
+<p className="results-count">
+  Showing {filtered.length} club
+  {filtered.length !== 1 ? 's' : ''}
+</p>
 
       {filtered.length === 0 ? (
         <p className="no-results">No clubs match your search.</p>
