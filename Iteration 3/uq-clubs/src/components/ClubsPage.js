@@ -59,7 +59,7 @@ const filtered = clubs
             </svg>
           </span>
         </div>
-        
+
             <div className="sort-wrap">
   <select
     className="sort-dropdown"
@@ -85,6 +85,11 @@ const filtered = clubs
           ))}
         </div>
       </div>
+
+<p className="results-count">
+  Showing {filtered.length} club
+  {filtered.length !== 1 ? 's' : ''}
+</p>
 
       {filtered.length === 0 ? (
         <p className="no-results">No clubs match your search.</p>
