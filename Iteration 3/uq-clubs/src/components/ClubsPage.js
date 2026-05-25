@@ -59,6 +59,19 @@ const filtered = clubs
             </svg>
           </span>
         </div>
+        
+            <div className="sort-wrap">
+  <select
+    className="sort-dropdown"
+    value={sortOption}
+    onChange={(e) => setSortOption(e.target.value)}
+  >
+    <option value="default">Sort By</option>
+    <option value="az">A–Z</option>
+    <option value="most">Most Members</option>
+    <option value="least">Least Members</option>
+  </select>
+</div>
 
         <div className="filter-row">
           {FILTERS.map((f) => (
