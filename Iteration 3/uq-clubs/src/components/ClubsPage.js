@@ -73,19 +73,32 @@ const filtered = clubs
   </select>
 </div>
 
-        <div className="filter-row">
-          {FILTERS.map((f) => (
-            <button
-              key={f}
-              className={`filter-btn${activeFilter === f ? ' active' : ''}`}
-              onClick={() => setActiveFilter(f)}
-            >
-              {f}
-            </button>
-          ))}
-        </div>
-      </div>
+<div className="filter-row">
+  {FILTERS.map((f) => (
+    <button
+      key={f}
+      className={`filter-btn${activeFilter === f ? ' active' : ''}`}
+      onClick={() => setActiveFilter(f)}
+    >
+      {f}
+    </button>
+  ))}
 
+  {(search || activeFilter !== 'All' || sortOption !== 'default') && (
+    <button
+      className="filter-btn clear-btn"
+      onClick={() => {
+        setSearch('');
+        setActiveFilter('All');
+        setSortOption('default');
+      }}
+    >
+      Clear Filters
+    </button>
+  )}
+</div>
+
+</div>
 <p className="results-count">
   Showing {filtered.length} club
   {filtered.length !== 1 ? 's' : ''}
