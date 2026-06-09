@@ -13,10 +13,31 @@ export default function ClubsPage({ joinedClubs, onViewMore, initialFilter }) {
     if (initialFilter) setActiveFilter(initialFilter);
   }, [initialFilter]);
 
-  const filtered = clubs.filter((c) => {
-    const matchSearch = c.name.toLowerCase().includes(search.toLowerCase());
-    const matchFilter = activeFilter === 'All' || c.category === activeFilter;
+const filtered = clubs
+  .filter((c) => {
+    const matchSearch = c.name
+      .toLowerCase()
+      .includes(search.toLowerCase());
+
+    const matchFilter =
+      activeFilter === 'All' || c.category === activeFilter;
+
     return matchSearch && matchFilter;
+  })
+  .sort((a, b) => {
+    if (sortOption === 'az') {
+      return a.name.localeCompare(b.name);
+    }
+
+    if (sortOption === 'most') {
+      return b.memberCount - a.memberCount;
+    }
+
+    if (sortOption === 'least') {
+      return a.memberCount - b.memberCount;
+    }
+
+    return 0;
   });
 
   return (
