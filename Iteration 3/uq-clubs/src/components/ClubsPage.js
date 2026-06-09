@@ -7,6 +7,7 @@ const FILTERS = ['All', 'Sports', 'Faculty', 'Culture', 'Others'];
 export default function ClubsPage({ joinedClubs, onViewMore, initialFilter }) {
   const [search, setSearch] = useState('');
   const [activeFilter, setActiveFilter] = useState(initialFilter || 'All');
+  const [sortOption, setSortOption] = useState('default');
 
   useEffect(() => {
     if (initialFilter) setActiveFilter(initialFilter);
