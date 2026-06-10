@@ -1,6 +1,7 @@
 import React from 'react';
 import ClubCard from './ClubCard';
 import clubs from '../data/clubs';
+import ProfileInsight_YuejiaBai from './ProfileInsight_YuejiaBai';
 
 export default function ProfilePage({ joinedClubs, onViewMore }) {
   const joinedClubData = clubs.filter((c) => joinedClubs.includes(c.id));
@@ -42,10 +43,12 @@ export default function ProfilePage({ joinedClubs, onViewMore }) {
             <h2 className="section-heading">Notifications</h2>
             <div className="empty-box">NO NOTIFICATIONS</div>
           </section>
+                    
         </div>
 
         {/* Right / bottom column */}
         <div className="profile-clubs-col">
+       <ProfileInsight_YuejiaBai joinedClubData={joinedClubData} />
           <section>
             <h2 className="section-heading">Joined Clubs</h2>
             {joinedClubData.length === 0 ? (
