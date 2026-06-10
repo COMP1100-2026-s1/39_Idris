@@ -1,0 +1,119 @@
+# MVP Testing Summary - Yuejia Bai
+
+## Purpose
+
+The purpose of this MVP test was to check whether the UQ Clubs web application helps students browse, compare, and choose clubs more easily. In earlier iterations, many students said that club information was often unclear, scattered across different platforms, or too promotional. Therefore, this test focused on whether the MVP made club information easier to understand and whether the main features supported the user problem.
+
+## MVP Tested
+
+The tested MVP was the React application `uq-clubs`. It is a working web application that allows users to browse UQ clubs and view structured information about each club.
+
+The main MVP features tested were:
+
+* Homepage navigation
+* Club browsing page
+* Club search by name
+* Category filters such as Sports, Faculty, Culture, and Others
+* Club detail modal
+* Join club interaction
+* Profile page showing joined clubs
+* Responsive layout and visual design
+
+## Testing Method
+
+I conducted usability-style testing with student participants. Each participant was asked to use the MVP and complete simple tasks while giving feedback about what was clear, confusing, useful, or missing.
+
+The testing was informal but focused on realistic user behaviour. The participants were asked to imagine they were UQ students trying to find a club to join.
+
+Recording links and full transcripts are saved separately in the interview transcript files.
+
+## Participants
+
+The participants were UQ students or university students who could represent the target users of the product. They were suitable participants because the MVP is designed for students who want to explore and choose clubs.
+
+## Testing Tasks
+
+Participants were asked to complete tasks such as:
+
+1. Open the MVP and explain what they think the platform is for.
+2. Browse the club list and find a club that looks interesting.
+3. Use the search function to find a specific type of club.
+4. Use category filters to narrow down the club list.
+5. Open a club detail page or modal and check whether the information is useful.
+6. Join a club and check whether the action feels clear.
+7. Go to the profile page and check whether the joined club information makes sense.
+8. Comment on what information is still missing or confusing.
+
+## Key Findings
+
+### Finding 1: Students liked having structured club information in one place
+
+Participants generally found it useful that the MVP showed club information in a more structured way. This supported the original problem that students need clearer information before deciding which club to join.
+
+This finding supports the MVP direction because the product is not only about discovering clubs, but also about helping students compare and choose clubs with more confidence.
+
+### Finding 2: Search and filtering were useful for reducing effort
+
+The search and category filter features helped participants narrow down the club list more quickly. This was useful because students do not always want to scroll through a long list of clubs.
+
+This supports the decision to include search and filtering as core MVP features.
+
+### Finding 3: Club detail information needs to be clear and practical
+
+Participants cared about practical information, such as what the club does, where it meets, how often events happen, and how to contact the club. This showed that basic promotional descriptions are not enough.
+
+This supports the use of club detail modals and structured club cards.
+
+### Finding 4: The join interaction made the MVP feel more like a working product
+
+The join club interaction helped the MVP feel more functional and less like a static prototype. However, this feature could still be improved in future versions by adding clearer feedback after joining and by showing more personalised recommendations.
+
+### Finding 5: Some information still needs more trust and evidence
+
+A limitation of the current MVP is that some club information is still sample data. In future iterations, the platform would need verified club data, updated event information, and possibly student reviews to make the product more trustworthy.
+
+## What Worked Well
+
+The MVP worked well as a basic but functional software product. The strongest parts were:
+
+* The club browsing experience was easy to understand.
+* The visual layout made the product feel more complete.
+* Search and filtering helped users find clubs faster.
+* The club detail modal kept important information in one place.
+* The join interaction gave the website a clearer user flow.
+
+## Problems or Limitations Found
+
+The main limitations were:
+
+* Some users may still want more detailed club information before joining.
+* The join feature is basic and does not yet connect to a real account system.
+* The current MVP uses sample club data, so the information may not be fully verified.
+* More guidance could be added for first-time users.
+* The profile page could include more useful personalisation in the future.
+
+## MVP Decisions Based on Testing
+
+Based on the testing, the current MVP direction is still appropriate. The product should continue focusing on clear, structured, and trustworthy club information.
+
+The following decisions are supported by the testing:
+
+* Keep search and category filtering as core MVP features.
+* Keep the club detail modal because it helps users check information without leaving the page.
+* Keep the join club interaction because it makes the MVP feel usable.
+* Improve the profile page in future versions to show more useful joined-club information.
+* Add more trustworthy club details in future versions, such as event frequency, fees, time commitment, and verified student feedback.
+
+## Link to MVP Hypotheses
+
+The testing supported the hypothesis that students need clearer and more structured club information before they feel confident choosing a club.
+
+The testing also supported the hypothesis that a working web application with search, filtering, and club detail information can reduce the effort needed to compare clubs.
+
+However, the testing also showed that trust is still an important issue. Future versions should include more verified information and updated club details.
+
+## Conclusion
+
+Overall, the MVP testing showed that the React `uq-clubs` application is a useful starting point for helping students browse and compare UQ clubs. The MVP is basic, but it is a working piece of software and it addresses the main user problem identified in earlier iterations.
+
+The most valuable parts of the MVP are the structured club list, search and filtering tools, club detail modal, and join club interaction. Future improvements should focus on verified club data, clearer post-join feedback, and more personalised support for students choosing clubs.
