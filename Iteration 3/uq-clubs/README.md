@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## MVP Feature Update – Social Proof / Friends Activity
+
+For Iteration 3, the MVP includes a Social Proof / Friends Activity feature on the Profile page.
+
+This feature allows users to see friend activity and peer recommendations related to clubs. For example, the Profile page shows which friends joined, recommended, or showed interest in specific clubs. Users can also view suggested friends, follow/unfollow them, and click related clubs to open the club details.
+
+This feature was added because our earlier interviews showed that students often feel uncertain when choosing clubs. Several participants said that recommendations from friends or other students would make clubs feel more trustworthy and reduce decision uncertainty. Therefore, the Social Proof feature directly connects to our Social Influence hypothesis and supports our MVP goal of helping students choose clubs more confidently.
+
+Main functionality:
+
+* Displays friend club activity on the Profile page
+* Shows short peer-style recommendations
+* Provides suggested friends
+* Allows Add Friend / Following interaction
+* Links friend activity to existing club detail pages
