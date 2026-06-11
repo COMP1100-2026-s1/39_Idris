@@ -1,0 +1,344 @@
+# Product Testing Summary
+
+## Product Overview
+
+Our MVP, **UQ Clubs**, is designed to help University of Queensland students discover, compare, and join clubs more efficiently. The platform provides a centralized directory of student clubs, categorized by interests such as Sports, Faculty, Culture, and Others. Students can browse club information, search for clubs, view detailed descriptions, and manage joined clubs through their profile page.
+
+The goal of this testing round was to evaluate usability, usefulness, navigation, and the overall value proposition of the platform.
+
+---
+
+# Testing Method
+
+We conducted **five user interviews** with current UQ students.
+
+Participants were shown the MVP prototype and asked to complete common tasks, including:
+
+* Browsing clubs
+* Searching for clubs
+* Exploring club categories
+* Viewing club details
+* Evaluating whether they would join a club
+* Comparing the platform with existing methods of finding clubs
+
+Each interview lasted approximately 10 minutes and followed the same set of usability-focused questions.
+
+---
+
+# Key Findings
+
+## 1. Strong First Impression
+
+All participants reported positive first impressions.
+
+Common feedback included:
+
+* Clean and modern interface
+* Professional UQ branding
+* Easy-to-understand layout
+* Familiar mobile application style
+* Simple navigation structure
+
+Users consistently stated that they understood the purpose of the platform immediately after opening it.
+
+### Evidence
+
+Participant comments included:
+
+* "The layout is easy to understand."
+* "It feels like a mobile app designed for students."
+* "The platform looks clean, modern and visually appealing."
+* "I could instantly understand what the site is for."
+
+---
+
+## 2. Club Discovery Was Easy
+
+All participants reported that they could find relevant clubs quickly.
+
+Users appreciated:
+
+* Recommended clubs section
+* Category filters
+* Search functionality
+* Member count indicators
+
+Many students stated that category filtering significantly reduced the time needed to discover clubs.
+
+### Evidence
+
+Participants reported:
+
+* Finding technology clubs quickly.
+* Discovering cultural clubs through category filters.
+* Easily identifying active clubs using membership numbers.
+
+---
+
+## 3. Navigation Was Clear and Intuitive
+
+All five participants stated that navigation was straightforward.
+
+Positive comments focused on:
+
+* Home page
+* Clubs page
+* Profile page
+* Consistent navigation structure
+
+Users reported being able to move between pages without confusion.
+
+### Evidence
+
+Comments included:
+
+* "The flow feels logical and consistent."
+* "The navigation bar makes it easy to switch between pages."
+* "I never felt lost."
+
+---
+
+## 4. Club Information Was Helpful
+
+Participants generally agreed that club detail pages provided enough information to understand club activities.
+
+Useful information included:
+
+* Club descriptions
+* Weekly activities
+* Meeting locations
+* Contact emails
+* Membership numbers
+
+Users felt confident making initial decisions after reading club details.
+
+---
+
+# Recurring Problems Identified
+
+Although overall feedback was positive, several recurring issues appeared across multiple interviews.
+
+---
+
+## Problem 1: Missing Join Button
+
+This was the most common issue identified.
+
+Participants expected a visible action button that would allow them to immediately join a club.
+
+### Mentioned by
+
+* Interview 1
+* Interview 2
+* Interview 3
+* Interview 4
+
+### Improvement
+
+Implemented a dedicated **Join Club** button inside the club detail modal.
+
+---
+
+## Problem 2: Missing Event Information
+
+Users wanted to know:
+
+* Upcoming events
+* Meeting schedules
+* Event calendars
+
+Participants stated that event information would significantly improve decision-making.
+
+### Mentioned by
+
+* Interview 2
+* Interview 3
+* Interview 4
+* Interview 5
+
+### Planned Improvement
+
+Future versions will include:
+
+* Upcoming events section
+* Club calendar integration
+* Event reminders
+
+---
+
+## Problem 3: Lack of Social Proof
+
+Several participants wanted to know whether clubs were active and worth joining.
+
+Suggested features included:
+
+* Member reviews
+* Recommendations
+* Friend activity
+* Testimonials
+
+### Mentioned by
+
+* Interview 2
+* Interview 3
+* Interview 5
+
+### Implemented Improvement
+
+A new **Social Proof** feature was added:
+
+* Friend activity feed
+* Suggested friends
+* Club recommendations based on peer activity
+
+---
+
+## Problem 4: Missing Visual Content
+
+Participants requested:
+
+* Photos
+* Event galleries
+* Videos
+
+Users felt visual content would better represent club culture and atmosphere.
+
+### Mentioned by
+
+* Interview 2
+* Interview 4
+* Interview 5
+
+### Planned Improvement
+
+Future versions will include:
+
+* Club galleries
+* Event photos
+* Promotional videos
+
+---
+
+## Problem 5: Limited Search and Discovery Features
+
+While users liked the search function, they requested additional discovery tools.
+
+Suggestions included:
+
+* Better recommendations
+* Sorting options
+* Personalized club suggestions
+
+### Implemented Improvement
+
+The following features were added:
+
+* A-Z sorting
+* Most members sorting
+* Least members sorting
+* Improved recommendation system
+
+---
+
+# Improvements Implemented After Testing
+
+Based on interview findings, the following changes were implemented in Iteration 4:
+
+## Feature 1: Club Sorting
+
+Added sorting options:
+
+* Default
+* A-Z
+* Most Members
+* Least Members
+
+Benefit:
+
+Users can compare clubs more efficiently.
+
+---
+
+## Feature 2: Enhanced Search
+
+Search now supports:
+
+* Club name matching
+* Category matching
+* Description matching
+
+Benefit:
+
+Improves club discovery accuracy.
+
+---
+
+## Feature 3: Social Proof System
+
+Added:
+
+* Friend activity feed
+* Suggested friends
+* Shared club interests
+
+Benefit:
+
+Helps students evaluate clubs using peer experiences.
+
+---
+
+## Feature 4: Dynamic Notifications
+
+Profile notifications now respond to user activity.
+
+Benefit:
+
+Creates a more realistic user experience.
+
+---
+
+## Feature 5: Improved Recommendations
+
+Recommended clubs now prioritize:
+
+* Popular clubs
+* High membership clubs
+* Active communities
+
+Benefit:
+
+Provides stronger guidance for new students.
+
+---
+
+# Overall Evaluation
+
+The testing results strongly validated our problem hypothesis.
+
+Participants consistently reported that the platform:
+
+* Saves time
+* Reduces information searching effort
+* Makes club discovery easier
+* Provides a more organized experience than social media
+* Offers a better alternative to asking friends or browsing multiple websites
+
+All participants stated that they would likely use the platform if officially released.
+
+The most valuable aspects of the MVP were:
+
+1. Centralized club information
+2. Simple navigation
+3. Category-based discovery
+4. Search functionality
+5. Clear club details
+
+The main opportunities for future development are:
+
+* Event calendars
+* Direct club joining
+* Reviews and ratings
+* Photo and video galleries
+* Real-time club updates
+
+Overall, the testing results indicate that the MVP successfully addresses a genuine student need and demonstrates strong potential for future development.

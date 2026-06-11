@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ClubCard from './ClubCard';
 import clubs from '../data/clubs';
 
@@ -11,10 +11,27 @@ const CATEGORIES = [
 
 export default function HomePage({ joinedClubs, onViewMore, onNavigate }) {
   const [search, setSearch] = useState('');
+  const [loading, setLoading] = useState(true);
 
-  const filtered = clubs.filter((c) =>
-    c.name.toLowerCase().includes(search.toLowerCase())
-  );
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 500); // 模拟 loading
+  }, []);
+
+  if (loading) return <div>Loading clubs...</div>;
+
+  const filtered = clubs.filter((c) => {
+    const keyword = search.toLowerCase();
+    return (
+      c.name.toLowerCase().includes(keyword) ||
+      c.category.toLowerCase().includes(keyword) ||
+      (c.description && c.description.toLowerCase().includes(keyword))
+    );
+  });
+
+  // 推荐：按成员数排序前4
+  const recommended = clubs
+    .sort((a, b) => b.memberCount - a.memberCount)
+    .slice(0, 4);
 
   return (
     <div className="inner">
@@ -53,11 +70,11 @@ export default function HomePage({ joinedClubs, onViewMore, onNavigate }) {
 
       <section>
         <h2 className="section-heading">Recommended Clubs</h2>
-        {filtered.length === 0 ? (
+        {recommended.length === 0 ? (
           <p className="no-results">No clubs match your search.</p>
         ) : (
           <div className="club-grid">
-            {filtered.map((club) => (
+            {recommended.map((club) => (
               <ClubCard
                 key={club.id}
                 club={club}
@@ -70,4 +87,5 @@ export default function HomePage({ joinedClubs, onViewMore, onNavigate }) {
       </section>
     </div>
   );
+}
 }
