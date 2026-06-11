@@ -45,6 +45,15 @@ const filtered = clubs
       <h1 className="page-title">Clubs.</h1>
 
       <div className="clubs-toolbar">
+    <select
+  value={sortOption}
+  onChange={(e) => setSortOption(e.target.value)}
+>
+  <option value="default">Default</option>
+  <option value="az">A-Z</option>
+  <option value="most">Most Members</option>
+  <option value="least">Least Members</option>
+</select>
         <div className="search-bar-wrap search-bar-wrap--inline">
           <input
             className="search-bar"
