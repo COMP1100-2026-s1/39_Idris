@@ -55,37 +55,46 @@ export default function ClubsPage({ joinedClubs, onViewMore, initialFilter }) {
     </div>
 
     <div className="clubs-toolbar">
-        <select value={sortOption} onChange={(e) => setSortOption(e.target.value)}>
-          <option value="default">Default</option>
-          <option value="az">A-Z</option>
-          <option value="most">Most Members</option>
-          <option value="least">Least Members</option>
-        </select>
 
-        <div className="search-bar-wrap search-bar-wrap--inline">
-          <input
-            className="search-bar"
-            type="text"
-            placeholder="Search for clubs"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </div>
+  {/* LEFT: search */}
+  <div className="search-bar-wrap search-bar-wrap--inline">
+    <input
+      className="search-bar"
+      type="text"
+      placeholder="Search for clubs"
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+    />
+  </div>
 
-        <div className="filter-row">
-          {FILTERS.map((f) => (
-            <button
-              key={f}
-              className={`filter-btn${activeFilter === f ? ' active' : ''}`}
-              onClick={() => setActiveFilter(f)}
-            >
-              {f}
-            </button>
-          ))}
-        </div>
-      </div>
+  {/* SORT */}
+  <select
+    className="sort-dropdown"
+    value={sortOption}
+    onChange={(e) => setSortOption(e.target.value)}
+  >
+    <option value="default">Default</option>
+    <option value="az">A-Z</option>
+    <option value="most">Most Members</option>
+    <option value="least">Least Members</option>
+  </select>
 
-      <p>Showing {filtered.length} clubs</p>
+  {/* FILTERS */}
+  <div className="filter-row">
+    {FILTERS.map((f) => (
+      <button
+        key={f}
+        className={`filter-btn${activeFilter === f ? ' active' : ''}`}
+        onClick={() => setActiveFilter(f)}
+      >
+        {f}
+      </button>
+    ))}
+  </div>
+
+</div>
+
+<p>Showing {filtered.length} clubs</p>
 
       {filtered.length === 0 ? (
         <p className="no-results">No clubs match your search.</p>
