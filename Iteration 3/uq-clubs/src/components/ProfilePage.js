@@ -61,7 +61,11 @@ export default function ProfilePage({ joinedClubs = [], onViewMore = () => {} })
 
           <section>
             <h2 className="section-heading">Notifications</h2>
-            <div className="empty-box">NO NOTIFICATIONS</div>
+            <div className="empty-box">
+              {safeJoinedClubs.length === 0
+                ? "You haven't joined any clubs yet."
+                : `You joined ${safeJoinedClubs.length} clubs recently.`}
+            </div>
           </section>
 
           <section className="social-proof-summary">
@@ -108,9 +112,9 @@ export default function ProfilePage({ joinedClubs = [], onViewMore = () => {} })
               {safeFriendActivities.map((activity) => {
                 const club = getClubById(activity.clubId);
 
-                if (!club) {
-                  return null;
-                }
+                if (!club) return null;
+
+                const mutual = safeJoinedClubs.includes(activity.clubId);
 
                 return (
                   <article key={activity.id} className="friend-activity-card">
@@ -128,6 +132,12 @@ export default function ProfilePage({ joinedClubs = [], onViewMore = () => {} })
                         <p className="friend-activity-meta">
                           {activity.signal} · {activity.time}
                         </p>
+
+                        {mutual && (
+                          <span>
+                            ✓ You and {activity.friendName} are both interested in this club
+                          </span>
+                        )}
                       </div>
                     </div>
 
