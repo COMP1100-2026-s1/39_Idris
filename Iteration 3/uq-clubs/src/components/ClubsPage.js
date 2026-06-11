@@ -30,11 +30,31 @@ export default function ClubsPage({ joinedClubs, onViewMore, initialFilter }) {
       return 0;
     });
 
-  return (
-    <div className="inner">
-      <h1 className="page-title">Clubs.</h1>
+ return (
+  <div className="inner">
+    <h1 className="page-title">Clubs.</h1>
 
-      <div className="clubs-toolbar">
+    {/* Sort Dropdown */}
+    <div style={{ marginBottom: '16px' }}>
+      <select
+        value={sortOption}
+        onChange={(e) => setSortOption(e.target.value)}
+        style={{
+          padding: '8px 12px',
+          borderRadius: '8px',
+          border: '1px solid #ccc',
+          fontSize: '14px',
+          cursor: 'pointer'
+        }}
+      >
+        <option value="default">Default</option>
+        <option value="az">A-Z</option>
+        <option value="most">Most Members</option>
+        <option value="least">Least Members</option>
+      </select>
+    </div>
+
+    <div className="clubs-toolbar">
         <select value={sortOption} onChange={(e) => setSortOption(e.target.value)}>
           <option value="default">Default</option>
           <option value="az">A-Z</option>
