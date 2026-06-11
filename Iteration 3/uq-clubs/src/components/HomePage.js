@@ -13,7 +13,11 @@ export default function HomePage({ joinedClubs, onViewMore, onNavigate }) {
   const [search, setSearch] = useState('');
 
   const filtered = clubs.filter((c) =>
-    c.name.toLowerCase().includes(search.toLowerCase())
+  const keyword = search.toLowerCase();
+  const matchSearch =
+  c.name.toLowerCase().includes(keyword) ||
+  c.category.toLowerCase().includes(keyword) ||
+  c.description.toLowerCase().includes(keyword);
   );
 
   return (
