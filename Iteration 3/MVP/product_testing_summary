@@ -1,344 +1,502 @@
-# Product Testing Summary
+# Product Testing Summary – Iteration 3 MVP
+
+## Purpose of Product Testing
+
+The purpose of the product-testing interviews was to evaluate whether our working MVP helps UQ students discover, compare, evaluate, and choose clubs more confidently.
+
+Unlike the general interviews, which focused on validating student problems and behaviours, the product-testing interviews focused on the actual MVP experience. Participants were asked to use the platform and give feedback on usability, navigation, filtering, club profiles, search, comparison, joining flow, profile functions, and social proof.
+
+The MVP tested was a basic but functional React application for UQ club discovery. It included:
+
+* club browsing
+* category filtering
+* search functionality
+* club detail pages
+* joining clubs
+* joined clubs display
+* profile page
+* social proof / friends activity feature
+* recommended clubs
+* basic sorting and discovery support
+
+The goal of testing was to understand whether the MVP provides real value to students and whether it supports our core value proposition: helping students move from discovering clubs to making more confident club decisions.
+
+---
 
 ## Product Overview
 
-Our MVP, **UQ Clubs**, is designed to help University of Queensland students discover, compare, and join clubs more efficiently. The platform provides a centralized directory of student clubs, categorized by interests such as Sports, Faculty, Culture, and Others. Students can browse club information, search for clubs, view detailed descriptions, and manage joined clubs through their profile page.
+Our MVP, **UQ Clubs**, is designed to help University of Queensland students discover, compare, and join clubs more efficiently.
 
-The goal of this testing round was to evaluate usability, usefulness, navigation, and the overall value proposition of the platform.
+The platform provides a centralised directory of student clubs, organised by categories such as:
 
----
+* Sports
+* Faculty
+* Culture
+* Others
 
-# Testing Method
+Students can browse club information, search for clubs, filter by category, view detailed club descriptions, join clubs, and manage joined clubs through their profile page.
 
-We conducted **five user interviews** with current UQ students.
-
-Participants were shown the MVP prototype and asked to complete common tasks, including:
-
-* Browsing clubs
-* Searching for clubs
-* Exploring club categories
-* Viewing club details
-* Evaluating whether they would join a club
-* Comparing the platform with existing methods of finding clubs
-
-Each interview lasted approximately 10 minutes and followed the same set of usability-focused questions.
+Through Iteration 3, we also added a **Social Proof / Friends Activity** feature to the Profile page. This feature shows friend activity, peer-style recommendations, suggested friends, Add Friend / Following interaction, and links to related club details.
 
 ---
 
-# Key Findings
+## Testing Method
 
-## 1. Strong First Impression
+We conducted product-testing interviews with current UQ students representing different levels of club experience.
 
-All participants reported positive first impressions.
+Participants were shown the working MVP and asked to complete common tasks, including:
 
-Common feedback included:
+* browsing clubs
+* searching for clubs
+* exploring categories
+* viewing club details
+* using the profile page
+* evaluating whether they would join a club
+* responding to social proof / friends activity
+* comparing the platform with existing ways of finding clubs, such as Instagram, Market Day, UQ pages, Discord, Facebook, or asking friends
 
-* Clean and modern interface
-* Professional UQ branding
-* Easy-to-understand layout
-* Familiar mobile application style
-* Simple navigation structure
-
-Users consistently stated that they understood the purpose of the platform immediately after opening it.
-
-### Evidence
-
-Participant comments included:
-
-* "The layout is easy to understand."
-* "It feels like a mobile app designed for students."
-* "The platform looks clean, modern and visually appealing."
-* "I could instantly understand what the site is for."
+The interviews focused on both usability and value. We wanted to understand not only whether students could use the MVP, but also whether the MVP helped reduce confusion, increase trust, and improve decision confidence.
 
 ---
 
-## 2. Club Discovery Was Easy
+## Participants
 
-All participants reported that they could find relevant clubs quickly.
+Product testing included students with different levels of club experience. Three representative participants are summarised below.
 
-Users appreciated:
+### Participant 1: Emily – First-year international student
 
-* Recommended clubs section
-* Category filters
-* Search functionality
-* Member count indicators
+Emily had explored UQ clubs before but had not joined any clubs. Her main issue was uncertainty and feeling overwhelmed by scattered information.
 
-Many students stated that category filtering significantly reduced the time needed to discover clubs.
+After using the MVP, Emily said the platform made club discovery feel more organised and less stressful. She especially found filtering and comparison useful because they helped her move from a long list of clubs to a smaller shortlist.
 
-### Evidence
+Emily said the platform increased her confidence from around 4/10 to 7/10 because she could compare clubs and understand them more clearly. However, she still wanted more information about club culture, member experience, and whether beginners would feel welcome.
 
-Participants reported:
+Key learning from Emily:
 
-* Finding technology clubs quickly.
-* Discovering cultural clubs through category filters.
-* Easily identifying active clubs using membership numbers.
+* Filtering helps reduce overwhelm.
+* Comparison improves decision confidence.
+* Club profiles are useful but do not fully communicate club culture.
+* Student reviews or testimonials could reduce uncertainty further.
 
 ---
 
-## 3. Navigation Was Clear and Intuitive
+### Participant 2: Jack – Experienced club member
 
-All five participants stated that navigation was straightforward.
+Jack is a second-year student who joined several clubs in first year and is now active in one club. His main issue was not finding clubs, but evaluating whether clubs are genuinely worth joining.
 
-Positive comments focused on:
+After testing the MVP, Jack said the comparison and organised club information were useful because students already compare clubs manually through multiple tabs, Instagram pages, and websites. He felt the platform saved time and made differences between similar clubs easier to understand.
+
+Jack also responded positively to the Social Proof / Friends Activity feature. He said friend recommendations are still more powerful than platform information alone because friends provide context about the real club experience. However, he thought the feature was useful because it gave students another confidence signal when deciding which clubs to explore.
+
+Key learning from Jack:
+
+* The MVP helps students evaluate clubs more efficiently.
+* Comparison is useful for experienced students as well as first-year students.
+* Social proof supports trust but should be strengthened with real student reviews.
+* The platform helps students shortlist clubs rather than fully replacing real-life recommendations.
+
+---
+
+### Participant 3: Sarah – Third-year low-engagement student
+
+Sarah joined several clubs in first year but rarely attends club events now because she balances study, work, and personal commitments. Her main concern was whether clubs are worth her limited time.
+
+After testing the MVP, Sarah said the platform was useful because it helped her rule out irrelevant clubs quickly. She said this was valuable because busy students do not only need to find clubs; they need to decide which clubs deserve their attention.
+
+Sarah liked that the MVP made information easier to process. However, she still wanted stronger evidence of value, such as member outcomes, event attendance, reviews, or examples of what students actually gained from joining.
+
+Key learning from Sarah:
+
+* The MVP can help busy students save time.
+* Filtering and club profiles help students quickly remove unsuitable options.
+* Students need evidence that a club is worth the time commitment.
+* Social proof and student-generated content would make the MVP more persuasive.
+
+---
+
+## Key Findings
+
+### 1. Strong first impression
+
+Participants generally reported a positive first impression of the platform.
+
+Common positive feedback included:
+
+* clean and modern interface
+* professional UQ-style branding
+* simple layout
+* familiar student app style
+* clear navigation structure
+
+Participants were able to understand the purpose of the platform quickly after opening it. This suggests that the MVP’s basic interface and concept are understandable to early users.
+
+Example feedback included:
+
+* “The layout is easy to understand.”
+* “It feels like a mobile app designed for students.”
+* “The platform looks clean, modern and visually appealing.”
+* “I could instantly understand what the site is for.”
+
+---
+
+### 2. Club discovery was easier and more organised
+
+Participants said the MVP made club discovery easier than searching across multiple platforms.
+
+They appreciated:
+
+* recommended clubs
+* category filters
+* search functionality
+* clear club cards
+* membership numbers
+* centralised information
+
+Several participants said that filtering reduced the time needed to find relevant clubs. Instead of browsing every club or jumping between websites, users could narrow down their options more efficiently.
+
+This supports our earlier learning that students do not only need more information. They need information that is organised in a way that helps them make decisions.
+
+---
+
+### 3. Navigation was clear and intuitive
+
+Participants found the navigation structure straightforward.
+
+They were able to move between:
 
 * Home page
 * Clubs page
+* Club detail modal
 * Profile page
-* Consistent navigation structure
+* joined clubs section
 
-Users reported being able to move between pages without confusion.
+without major confusion.
 
-### Evidence
+Positive comments included:
 
-Comments included:
+* “The flow feels logical and consistent.”
+* “The navigation bar makes it easy to switch between pages.”
+* “I never felt lost.”
 
-* "The flow feels logical and consistent."
-* "The navigation bar makes it easy to switch between pages."
-* "I never felt lost."
+This suggests that the MVP is usable as a basic functional product, even though it is not fully polished.
 
 ---
 
-## 4. Club Information Was Helpful
+### 4. Club information was useful but not complete
 
-Participants generally agreed that club detail pages provided enough information to understand club activities.
+Participants generally agreed that the club detail pages provided enough information to understand the basic purpose of each club.
 
 Useful information included:
 
-* Club descriptions
-* Weekly activities
-* Meeting locations
-* Contact emails
-* Membership numbers
+* club descriptions
+* weekly activities
+* meeting locations
+* contact information
+* membership numbers
+* club categories
 
-Users felt confident making initial decisions after reading club details.
+However, participants also said that basic information alone was not enough to fully decide whether a club was worth joining. They wanted more authentic evidence about the real club experience.
 
----
+Common missing information included:
 
-# Recurring Problems Identified
+* upcoming events
+* real member reviews
+* photos or videos
+* club culture
+* beginner-friendliness
+* how active the club actually is
+* what students gain from joining
 
-Although overall feedback was positive, several recurring issues appeared across multiple interviews.
-
----
-
-## Problem 1: Missing Join Button
-
-This was the most common issue identified.
-
-Participants expected a visible action button that would allow them to immediately join a club.
-
-### Mentioned by
-
-* Interview 1
-* Interview 2
-* Interview 3
-* Interview 4
-
-### Improvement
-
-Implemented a dedicated **Join Club** button inside the club detail modal.
+This shows that club profiles are useful, but future iterations should include more student-generated and experience-based information.
 
 ---
 
-## Problem 2: Missing Event Information
+### 5. Social proof increased trust but needs more real student content
 
-Users wanted to know:
+Several participants said that social proof could make clubs feel more trustworthy and realistic.
 
-* Upcoming events
-* Meeting schedules
-* Event calendars
+The Social Proof / Friends Activity feature was added because earlier interviews showed that students trust peer recommendations and feel more confident when friends or other students are involved.
 
-Participants stated that event information would significantly improve decision-making.
+The implemented feature includes:
 
-### Mentioned by
+* friend activity feed
+* suggested friends
+* peer-style recommendations
+* Add Friend / Following interaction
+* related club links
 
-* Interview 2
-* Interview 3
-* Interview 4
-* Interview 5
+Participants responded positively to the feature because it gave them another confidence signal when evaluating clubs. However, they also said the feature would be stronger if it included real student reviews, ratings, testimonials, or comments about what to expect at a first event.
 
-### Planned Improvement
-
-Future versions will include:
-
-* Upcoming events section
-* Club calendar integration
-* Event reminders
+This means the Social Influence hypothesis was partially validated.
 
 ---
 
-## Problem 3: Lack of Social Proof
+## Recurring Problems Identified
 
-Several participants wanted to know whether clubs were active and worth joining.
+### Problem 1: Students expected a clear Join button
+
+A common usability issue was that participants expected a visible action button to join a club directly from the club detail page.
+
+This issue was mentioned by several participants.
+
+Implemented improvement:
+
+* A dedicated **Join Club** button was added inside the club detail modal.
+
+This improvement supports the joining flow and makes the MVP feel more functional.
+
+---
+
+### Problem 2: Users wanted more event information
+
+Participants wanted to know more about:
+
+* upcoming events
+* meeting schedules
+* event calendars
+* event frequency
+* what happens during a normal event
+
+They said event information would help them decide whether a club is active and worth joining.
+
+Planned future improvement:
+
+* Add upcoming events section
+* Add club calendar support
+* Add event reminders
+* Add “what to expect at your first event” comments
+
+---
+
+### Problem 3: Users wanted stronger social proof
+
+Participants wanted more evidence that clubs are active, trustworthy, and worth joining.
 
 Suggested features included:
 
-* Member reviews
-* Recommendations
-* Friend activity
-* Testimonials
+* member reviews
+* ratings
+* friend activity
+* testimonials
+* recommendations
+* real student comments
 
-### Mentioned by
+Implemented improvement:
 
-* Interview 2
-* Interview 3
-* Interview 5
+* A Social Proof / Friends Activity feature was added to the Profile page.
 
-### Implemented Improvement
+Future improvement:
 
-A new **Social Proof** feature was added:
-
-* Friend activity feed
-* Suggested friends
-* Club recommendations based on peer activity
+* Add real student-generated reviews and testimonials.
 
 ---
 
-## Problem 4: Missing Visual Content
+### Problem 4: Users wanted more visual content
 
-Participants requested:
+Participants suggested that photos and videos would help them understand club atmosphere and culture.
 
-* Photos
-* Event galleries
-* Videos
+Requested content included:
 
-Users felt visual content would better represent club culture and atmosphere.
+* club photos
+* event galleries
+* promotional videos
+* real event examples
 
-### Mentioned by
+Planned future improvement:
 
-* Interview 2
-* Interview 4
-* Interview 5
-
-### Planned Improvement
-
-Future versions will include:
-
-* Club galleries
-* Event photos
-* Promotional videos
+* Add club galleries
+* Add event photos
+* Add short videos or visual event previews
 
 ---
 
-## Problem 5: Limited Search and Discovery Features
+### Problem 5: Users wanted better discovery and comparison support
 
-While users liked the search function, they requested additional discovery tools.
+While participants liked the search and category filters, they wanted more ways to narrow down clubs.
 
-Suggestions included:
+Suggested improvements included:
 
-* Better recommendations
-* Sorting options
-* Personalized club suggestions
+* better recommendations
+* sorting options
+* personalised club suggestions
+* beginner-friendly labels
+* activity level indicators
+* filtering by time commitment or membership cost
 
-### Implemented Improvement
+Implemented or planned improvements:
 
-The following features were added:
-
-* A-Z sorting
-* Most members sorting
-* Least members sorting
-* Improved recommendation system
+* improved search
+* category-based discovery
+* recommended clubs
+* social proof signals
+* future sorting and personalisation features
 
 ---
 
-# Improvements Implemented After Testing
+## Improvements Implemented During Iteration 3
 
-Based on interview findings, the following changes were implemented in Iteration 4:
+Based on testing feedback and earlier interview evidence, several improvements were implemented or refined in the MVP.
 
-## Feature 1: Club Sorting
+### Feature 1: Join Club button
 
-Added sorting options:
-
-* Default
-* A-Z
-* Most Members
-* Least Members
+A Join Club button was added to the club detail modal.
 
 Benefit:
 
-Users can compare clubs more efficiently.
+* Makes the joining flow clearer.
+* Helps the MVP feel more like a functional product rather than only a directory.
 
 ---
 
-## Feature 2: Enhanced Search
+### Feature 2: Enhanced search and category filtering
 
-Search now supports:
-
-* Club name matching
-* Category matching
-* Description matching
+The platform supports club discovery through search and category filtering.
 
 Benefit:
 
-Improves club discovery accuracy.
+* Helps students find relevant clubs faster.
+* Reduces the need to browse every club manually.
+* Supports the Discovery & Overwhelm hypothesis.
 
 ---
 
-## Feature 3: Social Proof System
+### Feature 3: Social Proof / Friends Activity system
 
-Added:
+A Social Proof / Friends Activity feature was added to the Profile page.
 
-* Friend activity feed
-* Suggested friends
-* Shared club interests
+This includes:
+
+* friend activity feed
+* suggested friends
+* peer-style recommendations
+* Add Friend / Following interaction
+* links to related club details
 
 Benefit:
 
-Helps students evaluate clubs using peer experiences.
+* Helps students evaluate clubs using peer signals.
+* Supports decision confidence.
+* Connects directly to the Social Influence hypothesis.
 
 ---
 
-## Feature 4: Dynamic Notifications
+### Feature 4: Profile and joined clubs display
 
-Profile notifications now respond to user activity.
+The Profile page shows user information and joined clubs.
 
 Benefit:
 
-Creates a more realistic user experience.
+* Gives users a sense of personal progress.
+* Supports the joining flow.
+* Makes the MVP more functional and realistic.
 
 ---
 
-## Feature 5: Improved Recommendations
+## Connection to MVP Hypotheses
 
-Recommended clubs now prioritize:
+### Discovery & Overwhelm
 
-* Popular clubs
-* High membership clubs
-* Active communities
+Product testing supported this hypothesis. Participants said the MVP reduced the effort required to search for clubs because club information was centralised and filters helped narrow down options.
 
-Benefit:
+The MVP does not remove the large number of clubs, but it helps users process club information more efficiently.
 
-Provides stronger guidance for new students.
+Status: Supported.
 
 ---
 
-# Overall Evaluation
+### Decision Uncertainty
 
-The testing results strongly validated our problem hypothesis.
+This hypothesis was strongly supported. Participants said the MVP helped them feel more informed and more confident, especially when filtering and comparing clubs.
 
-Participants consistently reported that the platform:
+However, participants still wanted more student reviews, testimonials, event information, and club culture details. This means the MVP improves decision confidence, but does not fully remove uncertainty.
 
-* Saves time
-* Reduces information searching effort
-* Makes club discovery easier
-* Provides a more organized experience than social media
-* Offers a better alternative to asking friends or browsing multiple websites
+Status: Supported, with further improvement needed.
 
-All participants stated that they would likely use the platform if officially released.
+---
 
-The most valuable aspects of the MVP were:
+### Joining Friction
 
-1. Centralized club information
-2. Simple navigation
-3. Category-based discovery
-4. Search functionality
-5. Clear club details
+This hypothesis was partially supported. Participants did not see the joining process itself as the biggest problem. Instead, they said uncertainty before joining makes even small barriers, such as forms or fees, feel more difficult.
 
-The main opportunities for future development are:
+This suggests the MVP should focus on increasing confidence before students reach the join stage.
 
-* Event calendars
-* Direct club joining
-* Reviews and ratings
-* Photo and video galleries
-* Real-time club updates
+Status: Partially supported.
 
-Overall, the testing results indicate that the MVP successfully addresses a genuine student need and demonstrates strong potential for future development.
+---
+
+### Social Influence
+
+This hypothesis was partially supported. Participants said friend activity, peer recommendations, and social proof made clubs feel more trustworthy.
+
+However, participants also said the feature would be stronger with real student-generated content such as reviews, ratings, and member testimonials.
+
+Status: Partially supported.
+
+---
+
+## Summary of Findings
+
+Overall, product testing showed that the MVP provides value as a basic functional club discovery platform.
+
+The strongest validated features were:
+
+* category filtering
+* search
+* club profiles
+* join button
+* profile-based joined clubs
+* social proof / friends activity
+
+Participants agreed that the MVP was more organised than searching across multiple platforms such as Instagram, UQ pages, Discord, Facebook, or Market Day follow-up links.
+
+The MVP was especially useful because it helped students:
+
+* save time
+* reduce information searching effort
+* browse clubs in one place
+* narrow down options
+* understand basic club differences
+* feel more confident before joining
+
+However, testing also showed that basic information alone is not enough. Students still want more authentic evidence about the real club experience.
+
+Common feedback across participants:
+
+* Students want to compare clubs more easily.
+* Students want to understand what clubs are actually like.
+* Friend recommendations and student reviews increase trust.
+* Social proof helps reduce uncertainty but should be expanded.
+* Students want event information and visual content.
+* The MVP is useful even if it is not polished because it provides a working structure for club discovery and decision-making.
+
+---
+
+## Decisions for Future Iterations
+
+Based on the product testing, we decided to keep the current MVP direction and improve it by focusing on decision confidence rather than only discovery.
+
+Future improvements could include:
+
+* student reviews
+* ratings
+* member testimonials
+* “what to expect at your first event” comments
+* event calendars
+* event reminders
+* activity level indicators
+* clearer beginner-friendly labels
+* more detailed club culture information
+* photos and videos
+* improved comparison between similar clubs
+* personalised club recommendations
+* sorting by popularity, membership size, or event frequency
+
+---
+
+## Final Product Testing Conclusion
+
+The MVP does not completely solve every problem in the club-joining process, but it successfully addresses the key issue identified in earlier iterations: students do not simply struggle to find clubs; they struggle to choose clubs confidently.
+
+The working MVP helps students browse, search, filter, compare, join, and evaluate clubs more efficiently. The Social Proof / Friends Activity feature also supports trust and confidence by showing peer activity and recommendations.
+
+Therefore, the MVP is a valid functional attempt that connects directly to our problem evidence, solution testing, prototype feedback, MVP implementation, and Iteration 3 product-testing results.
